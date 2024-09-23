@@ -1,0 +1,879 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<style>
+		.text-custom {
+			color: #f7bf31;
+		}
+
+		.text-custom2 {
+			color: #f7bf31;
+			text-shadow:
+				-1px -1px 0 black,
+				1px -1px 0 black,
+				-1px 1px 0 black,
+				1px 1px 0 black;
+		}
+
+		.background-div {
+			position: relative;
+			/* Necesario para que el pseudo-elemento se posicione correctamente */
+			background-image: url('./images/backgroundTecho.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 45rem;
+			overflow: hidden;
+		}
+
+		.background-div::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.7);
+			/* Color negro semitransparente */
+			z-index: 1;
+			/* Asegura que esté encima del fondo */
+		}
+
+		.background-div>* {
+			position: relative;
+			/* Para que los contenidos dentro del div se mantengan sobre el pseudo-elemento */
+			z-index: 2;
+			/* Asegura que el contenido esté encima del fondo y la superposición */
+		}
+
+		.product-item {
+			display: block;
+			/* Asegúrate de que el enlace sea un bloque */
+			text-align: center;
+			/* Centra el texto dentro del enlace */
+		}
+
+		.product-thumbnail {
+			width: 100%;
+			/* La imagen ocupa el 100% del ancho del contenedor */
+			height: 20rem !important;
+			/* Mantiene la proporción de la imagen */
+			object-fit: cover;
+			/* Cubre el contenedor si es necesario (opcional) */
+			border-top-left-radius: 15px;
+			/* Ajusta el radio según sea necesario */
+			border-top-right-radius: 15px;
+			/* Ajusta el radio según sea necesario */
+			overflow: hidden;
+			/* Asegúrate de que los bordes redondeados se apliquen correctamente */
+		}
+	</style>
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>SUN CAT</title>
+</head>
+
+<body>
+
+	<!-- Start Hero Section -->
+	<div class="background-div">
+		<nav style="background: none !important;" class="custom-navbar navbar navbar-expand-md navbar-dark"
+			aria-label="Furni navigation bar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img width="90" src="./images/Logo.png"
+						alt=""><span></span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+					aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li><a class="nav-link" href="#">Shop</a></li>
+						<li><a class="nav-link" href="#">About us</a></li>
+						<li><a class="nav-link" href="#">Services</a></li>
+						<li><a class="nav-link" href="#">Blog</a></li>
+						<li><a class="nav-link" href="#">Contact us</a></li>
+						<!--<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>-->
+					</ul>
+					<!--<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul>-->
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5">
+					<br>
+					<br>
+					<div class="intro-excerpt">
+						<span class="h1 text-white fw-bold">Brighten Your Home with<span class="d-block">Sun Cat
+								Skylights</span></span>
+						<span class="text-custom fw-bold fs-4">The Authorized Solatube Dealer for Las Vegas & Southern
+							Nevada</span>
+						<br><br>
+						<span class="text-custom fw-bold fs-5">Expert Skylight Installation and Ventilation Solutions
+							for a Brighter, Energy-Efficient Home.</span>
+						<br><br>
+						<p>
+							<!--<a href="" class="btn btn-secondary me-2"><i class="fa-solid fa-phone"></i> Call Anytime</a>-->
+							<a href="#" class="btn btn-white-outline"><i class="fa-solid fa-phone"></i> Call Anytime
+								<span>(702) 6558-9847</span></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<!--<div class="hero-img-wrap">
+                    <img src="images/couch.png" class="img-fluid">
+                </div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Hero Section -->
+	<!-- Start Product Section -->
+	<div class="product-section">
+		<div class="container">
+			<div class="row">
+
+				<!-- Start Column 1 -->
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+					<h2 class="mb-4 section-title">Fast & Hassle-Free Installation</h2>
+					<p class="mb-4">Trust the experts for quick and worry-free installation.
+						Solatube's Premier Dealers can complete the job in just a few hours, ensuring your home remains
+						structurally
+						sound while enhancing its brightness. </p>
+					<p><a href="#" class="btn"><i class="fa-solid fa-phone"></i> Contact Us</a></p>
+				</div>
+				<!-- End Column 1 -->
+
+				<!-- Start Column 2 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="#">
+						<img src="images/OJOS.jpg" class="img-fluid product-thumbnail" alt="Nordic Chair">
+						<h3 class="product-title fw-bold">Easy on the Eyes</h3>
+						<div style="padding: 0 2px 0 2px;">
+							<span class="product-price">Solatube Daylighting Systems not only enhance spaces but also
+								improve clarity. Plus, their elegant designs are easy on the eyes.</span>
+						</div>
+					</a>
+				</div>
+				<!-- End Column 2 -->
+
+				<!-- Start Column 3 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="#">
+						<img src="images/Wallet.jpg" class="img-fluid product-thumbnail" alt="Nordic Chair">
+						<h3 class="product-title fw-bold">Easy on the Wallet</h3>
+						<div style="padding: 0 2px 0 2px;">
+							<span class="product-price">Installing Solatube Systems is less costly than skylights,
+								especially with tax credits. They also provide brighter, more colorful rooms that
+								require no daytime lighting.</span>
+						</div>
+					</a>
+				</div>
+				<!-- End Column 3 -->
+
+				<!-- Start Column 4 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="#">
+						<img src="images/Instalar.jpg" class="img-fluid product-thumbnail" alt="Nordic Chair">
+						<h3 class="product-title fw-bold">Easy to Have Installed</h3>
+						<div style="padding: 0 2px 0 2px;">
+							<span class="product-price">For a cost-effective solution, choose Solatube Systems over
+								skylights, especially with tax credits. They create brighter, colorful rooms without
+								needing daytime lighting.</span>
+						</div>
+					</a>
+				</div>
+				<!-- End Column 4 -->
+
+			</div>
+		</div>
+	</div>
+	<!-- End Product Section -->
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 class="section-title">Customize Your Solatube Daylighting System</h2>
+					<span class="fw-bold fs-5">4 Easy Steps</span>
+
+					<div class="row my-5">
+						<div class="col-6 col-md-6">
+							<div class="feature">
+								<div class="icon">
+									<!--<img src="images/truck.svg" alt="Image" class="imf-fluid">-->
+									<i class="fa-solid fa-sitemap" style="font-size: 2.5rem;"></i>
+
+								</div>
+								<h3>Choose Your Systems</h3>
+								<h5>Step 1</h5>
+								<p>Choose from 3 amazing systems, including options with dimming capabilities,
+									solar-powered nightlights, or our standard models. If you have questions, just call
+									us! One of our Certified Installation Consultants can guide you to the perfect
+									solution—and even install it the same day.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-6">
+							<div class="feature">
+								<div class="icon">
+									<!--<img src="images/bag.svg" alt="Image" class="imf-fluid">-->
+									<i class="fa-solid fa-maximize" style="font-size: 2.5rem;"></i>
+								</div>
+
+								<h3>Choose Your Size</h3>
+								<h5>Step 2</h5>
+								<p>Larger rooms like living rooms or kitchens need plenty of natural light, so we
+									recommend our bigger daylighting units for those spaces. For smaller areas like
+									closets or bathrooms, a compact system works perfectly.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-6">
+							<div class="feature">
+								<div class="icon">
+									<!--<img src="images/support.svg" alt="Image" class="imf-fluid">-->
+									<i class="fa-solid fa-lightbulb" style="font-size: 2.5rem;"></i>
+								</div>
+
+								<h3>Choose Your Sunlight Collector</h3>
+								<h5>Step 3</h5>
+								<p>Whether you choose our high-utility dome or our sleek, low-profile collector, you’ll
+									benefit from having the most advanced sunlight-capturing technologies available on
+									your roof.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-6">
+							<div class="feature">
+								<div class="icon">
+									<!--<img src="images/return.svg" alt="Image" class="imf-fluid">-->
+									<i class="fa-solid fa-heart" style="font-size: 2.5rem;"></i>
+								</div>
+								<h3>Choose Your Decorative Fixture</h3>
+								<h5>Step 4</h5>
+								<p>Enhance your home’s decor with Solatube Decorative Fixtures. Made of tempered glass
+									and available in more styles than any other brand, you'll easily find one that fits.
+									The only visible part of your Solatube system is the diffuser, which adds style and
+									seamlessly blends with any decor.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/Demo-2.png" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+	<!-- Start We Help Section -->
+	<div class="we-help-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-7 mb-5 mb-lg-0">
+					<div class="imgs-grid">
+						<div class="grid grid-1"><img src="images/g-2.jpg" alt="Untree.co"></div>
+						<div class="grid grid-2"><img src="images/g-1.jpg" alt="Untree.co"></div>
+						<div class="grid grid-3"><img src="images/grupo-1.jpeg" alt="Untree.co"></div>
+					</div>
+				</div>
+				<div class="col-lg-5 ps-lg-5">
+					<h5 style="color: #1e2d81;" class="section-title mb-4 fw-bold">About Us</h5>
+					<h2 class="section-title mb-4">Lighting Up Your Life, One Skylight at a Time</h2>
+
+					<p>At <strong> Sun Cat Skylights</strong>, we are passionate about bringing natural light into your
+						home through cutting-edge skylight technology. As the <strong>authorized Solatube Premier
+							Dealer</strong> for Las Vegas and Southern Nevada, we’ve been helping homeowners and
+						businesses transform dark spaces into bright, energy-efficient areas for over 30 years.</p>
+					<p>Founded and led by <strong>Glenn Georgens,</strong> who has more than <strong>50 years of
+							experience in the construction industry</strong> and 30 years specializing in
+						<strong>Solatube Daylighting Systems </strong>, our mission is to deliver exceptional service
+						from consultation to installation.
+					</p>
+					<p>Whether you’re looking to brighten your home with natural light, improve energy efficiency, or
+						enhance your ventilation system, Sun Cat Skylights has the expertise and products to meet your
+						needs. From <strong>Solatube Daylighting Systems</strong> to the innovative Garage Vent System,
+						we provide tailored solutions that fit your lifestyle.</p>
+
+					<!--<ul class="list-unstyled custom-list my-4">
+						<li>Donec vitae odio quis nisl dapibus malesuada</li>
+						<li>Donec vitae odio quis nisl dapibus malesuada</li>
+						<li>Donec vitae odio quis nisl dapibus malesuada</li>
+						<li>Donec vitae odio quis nisl dapibus malesuada</li>
+					</ul>-->
+					<p><a herf="#" class="btn">Speak to an Expert</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End We Help Section -->
+
+
+
+
+	<!-- Nueva Seccion -->
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 style="color: #1e2d81;" class="section-title">Solatube Technology</h2>
+					<h2 class="section-title">Lighting Up Your Life, One Skylight at a Time</h2>
+					<span class="">Illuminate your home with Solatube’s tubular skylight technology, which uses
+						Raybender® 3000 and LightTracker™ Reflector to capture maximum daylight, sending it through
+						ultra-reflective Spectralight® Infinity Tubing. This brightens even dark or hard-to-reach
+						spaces. The system integrates solar-electric tech to power a smart NightLight, keeping spaces
+						softly lit after dark. Designed fixtures offer customizable lighting, ventilation, and dimming
+						options, blending practicality with aesthetics.</span>
+
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/01.jpeg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 style="color: #1e2d81;" class="section-title">Daylighting Systems</h2>
+					<h2 class="section-title">Transform Your Home with Daylighting Systems</h2>
+					<span class="">Transform your home with natural light, brightening dark corners and creating vibrant
+						spaces. Choose from a variety of stylish fixtures, both modern and classic, to suit any home.
+						The new Solar-Powered Daylight Dimmer offers a remote control to adjust light levels instantly
+						and comes with a Federal tax credit. For a sleek look, the Low Profile Collector delivers
+						impressive lighting in a subtle design. Plus, the Solar-Powered Nightlight stores energy during
+						the day for nighttime use and is also tax credit eligible.</span>
+
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/02.jpeg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 style="color: #1e2d81;" class="section-title">Solatube Whole House Fan</h2>
+					<h2 class="section-title">Engineered for Comfort</h2>
+					<span class="">Solatube's ultra-quiet Whole House Fans improve air quality and cool your home by
+						circulating fresh air throughout. They not only reduce air conditioning costs during hot months
+						by using Thermal Mass Cooling but also eliminate stale air and indoor contaminants year-round.
+						In summer, they cool the home, attic, and contents by up to 30 degrees, while in winter, they
+						replace stale, bacteria-laden air with fresh air without making the house cold. This ensures a
+						healthier, more comfortable living environment in any season.</span>
+
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/03.jpeg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 style="color: #1e2d81;" class="section-title">Solatube Solar-Powered Attic Fans</h2>
+					<h2 class="section-title">Stay Cool and Protected with Solatube Solar-Powered Attic Fans</h2>
+					<span class="">Solatube’s Solar-Powered Attic Fans cool your home by venting excess heat from the
+						attic, reducing air conditioning costs and extending roof life. In winter, they remove moisture
+						to prevent mold, leaks, and structural damage. A Thermal Switch can be added to optimize fan
+						operation based on temperature. These fans also qualify for a Federal Tax Credit.</span>
+
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/04.jpeg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+	<!-- Start Why Choose Us Section -->
+	<div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-6">
+					<h2 style="color: #1e2d81;" class="section-title">Solatube Garage Fans</h2>
+					<h2 class="section-title">Keep Your Garage Cool and Comfortable</h2>
+					<span class="">Solatube’s garage fans keep your garage cool and ventilated, which is ideal for all
+						uses, from workshops to gyms. These durable solar and electric fans remove harmful fumes and
+						excess heat, ensuring comfort and air quality. The Solar Roof-Mount Garage Fan is perfect for
+						open-ceiling garages, using solar power to efficiently cool your space without raising energy
+						costs or affecting curb appeal, thanks to its sleek design and high-power motor.</span>
+
+				</div>
+
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img width="350rem" src="images/05.jpeg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Why Choose Us Section -->
+
+	<!-- Nueva Seccion FIN -->
+
+
+
+	<!-- Start Popular Product -->
+	<div style="background-color: black;" class="popular-product">
+		<div class="container">
+			<div class="row">
+
+				<div class="why-choose-section">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-lg-6">
+								<h3 style="color:  #f7bf31;" class="section-title">Ready to Transform Your Space?</h3>
+								<h1 style="color: #ffffff;" class="section-title">Don’t wait—start your project today!
+								</h1>
+
+							</div>
+
+							<div class="col-lg-5">
+								<div>
+									<br>
+									<p><a herf="#" style="background-color: #f7bf31;" class="btn"> <span
+												style="color: black;">Speak to an Expert</span></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--
+				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+					<div class="product-item-sm d-flex">
+						<div class="thumbnail">
+							<img src="images/product-1.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="pt-3">
+							<h3>Nordic Chair</h3>
+							<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+							<p><a href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+					<div class="product-item-sm d-flex">
+						<div class="thumbnail">
+							<img src="images/product-2.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="pt-3">
+							<h3>Kruzo Aero Chair</h3>
+							<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+							<p><a href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+					<div class="product-item-sm d-flex">
+						<div class="thumbnail">
+							<img src="images/product-3.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="pt-3">
+							<h3>Ergonomic Chair</h3>
+							<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+							<p><a href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+
+		</div>
+	</div>
+	<!-- End Popular Product -->
+
+
+
+
+
+	<!-- Start Testimonial Slider -->
+	<div class="testimonial-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 mx-auto text-center">
+					<h5 class="section-title">Testimonials</h5>
+					<h2 class="section-title">What they say about us</h2>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="testimonial-slider-wrap text-center">
+
+						<div id="testimonial-nav">
+							<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+							<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+						</div>
+
+						<div class="testimonial-slider">
+
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-lg-8 mx-auto">
+
+										<div class="testimonial-block text-center">
+											<blockquote class="mb-5">
+												<p>&ldquo;"Wanted to let you know how pleased we are with our Solatubes!
+
+													What a difference in our bathrooms, kitchen, office and hallway. We
+													keep wanting to turn off the lights when we leave our home!
+													Everyone was very professional, from the lady who answered the phone
+													when we made the appointment, to the installation crew who were on
+													time, efficient and did not leave a mess. As a matter of fact I was
+													very pleasantly surprised that there was very little dust.
+													Also, my husband's biggest concern was satisfied, when it rained and
+													there were no leaks!!!
+													We want to thank you for a job well done, and we will recommend you
+													highly!"&rdquo;</p>
+											</blockquote>
+
+											<div class="author-info">
+												<div class="author-pic">
+													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+												</div>
+												<h3 class="font-weight-bold">Eleonore S.</h3>
+												<span class="position d-block mb-3">Satisfied Homeowner</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- END item -->
+
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-lg-8 mx-auto">
+
+										<div class="testimonial-block text-center">
+											<blockquote class="mb-5">
+												<p>&ldquo;"I would like to take this opportunity to thank you and your
+													installers for the prompt, excellent service I received when I
+													recently had 3 Solatube skylights installed.
+													From the first phone call, to your visit and then the installation,
+													everything went like clockwork.
+													So often in today's world, we complain about services, that I feel
+													it is necessary to commend people for a job well done.
+													Your installers went the extra mile for me with a slight placement
+													problem in the hall and having me change my mind about the lens
+													covers. They were great, and no mess to clean-up.
+													I have brought the brochures to my office and have several at home
+													so they will be available to friends.
+													Again, thanks so much for a job well done. This time spending money
+													was a pleasure."&rdquo;</p>
+											</blockquote>
+
+											<div class="author-info">
+												<div class="author-pic">
+													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+												</div>
+												<h3 class="font-weight-bold">Sybil K.</h3>
+												<span class="position d-block mb-3">Happy Customer</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- END item -->
+
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-lg-8 mx-auto">
+
+										<div class="testimonial-block text-center">
+											<blockquote class="mb-5">
+												<p>&ldquo;"Dear Sun Cat,
+													We just spent tons of money on a new kitchen and I still was
+													unhappy. We added the Solatubes and WOW what a difference!!! My
+													kitchen finally looks great. The natural light made all the
+													difference. Now my counter tops look incredible. Thank you for the
+													great customer service.
+													Thank You"&rdquo;</p>
+											</blockquote>
+
+											<div class="author-info">
+												<div class="author-pic">
+													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+												</div>
+												<h3 class="font-weight-bold">Tim D.</h3>
+												<span class="position d-block mb-3">Satisfied Client</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- END item -->
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Testimonial Slider -->
+
+	<!-- Start Blog Section -->
+	<!--
+	<div class="blog-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-6">
+					<h2 class="section-title">Recent Blog</h2>
+				</div>
+				<div class="col-md-6 text-start text-md-end">
+					<a href="#" class="more">View All Posts</a>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+					<div class="post-entry">
+						<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image"
+								class="img-fluid"></a>
+						<div class="post-content-entry">
+							<h3><a href="#">First Time Home Owner Ideas</a></h3>
+							<div class="meta">
+								<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19,
+										2021</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+					<div class="post-entry">
+						<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image"
+								class="img-fluid"></a>
+						<div class="post-content-entry">
+							<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
+							<div class="meta">
+								<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+					<div class="post-entry">
+						<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image"
+								class="img-fluid"></a>
+						<div class="post-content-entry">
+							<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+							<div class="meta">
+								<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12,
+										2021</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>-->
+	<!-- End Blog Section -->
+
+	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+
+			<!--<div class="sofa-img">
+				<img src="images/sofa.png" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="subscription-form">
+						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
+									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+						<form action="#" class="row g-3">
+							<div class="col-auto">
+								<input type="text" class="form-control" placeholder="Enter your name">
+							</div>
+							<div class="col-auto">
+								<input type="email" class="form-control" placeholder="Enter your email">
+							</div>
+							<div class="col-auto">
+								<button class="btn btn-primary">
+									<span class="fa fa-paper-plane"></span>
+								</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4">
+					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
+					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+						Pellentesque habitant</p>
+
+					<ul class="list-unstyled custom-social">
+						<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-8">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Knowledge base</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Our team</a></li>
+								<li><a href="#">Leadership</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Nordic Chair</a></li>
+								<li><a href="#">Kruzo Aero</a></li>
+								<li><a href="#">Ergonomic Chair</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>-->
+
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>. Georgens Enterprises, Inc. dba
+							Sun Cat Skylights. All rights reserved.
+							<!-- License information: https://untree.co/license/ -->
+						</p>
+					</div>
+
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled">
+							<li><a href="#"><span>Sun Cat Skylights</span></a></li>
+							<li><a href="#"><span>5965 Harrison Dr. Suite 3, Las Vegas, NV 89120</span></a></li>
+							<li><a href="#">License #0082208</a></li>
+							<li><a href="#"><span><i class="fa-solid fa-phone"></i>  (702) 658-9847</span></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
