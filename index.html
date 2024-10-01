@@ -79,6 +79,23 @@
 			overflow: hidden;
 			/* Asegúrate de que los bordes redondeados se apliquen correctamente */
 		}
+
+		/* Estilos para centrar el contenedor */
+        .form-container {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            min-height: 100vh; /* Ocupa todo el alto de la ventana */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para ajustar el iframe generado por Kommo */
+        #amoforms_script_1384451 {
+            margin: 0 auto;
+            max-width: 600px; /* Ajusta este valor si es necesario */
+            width: 100%;
+        }
 	</style>
 
 	<meta name="description" content="" />
@@ -161,8 +178,21 @@
 	</div>
 	<!-- End Hero Section -->
 
+	<div class="form-container">
+        <!-- Script de Kommo para insertar el formulario -->
+        <script>
+            !function(a,m,o,c,r,m){
+                a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},
+                a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},
+                a[o+r]({id:"1384451",hash:"b7623ddb9cfbc8f0d625a9439054e18c",locale:"en"}),
+                a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}
+            }(window,0,"amo_forms_","params","load","loaded");
+        </script>
+        <script id="amoforms_script_1384451" async="async" charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1727759607"></script>
+    </div>
+
 <!-- Start Contact Form Section -->
-<div class="container my-5">
+<!-- <div class="container my-5">
     <h2 class="text-center mb-4">Contact Us</h2>
     <form id="contact-form" action="/submit-form" method="POST" class="mx-auto" style="max-width: 600px;">
         <div class="row">
@@ -200,11 +230,8 @@
         </button>
         <p class="mt-3 text-center">Your privacy is our priority — your data is safe and secure with us.</p>
     </form>
-</div>
-<!-- End Contact Form Section -->
-
-
-
+</div> <!-- 
+<!-- End Contact Form Section -->  -->
 
 	<!-- Start Product Section -->
 	<div class="product-section">
