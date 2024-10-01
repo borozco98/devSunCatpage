@@ -45,6 +45,42 @@ a {
       -webkit-box-shadow: none;
       box-shadow: none;
       outline: none; }
+
+/* Contact Form Styles */
+#contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form .form-label {
+  font-weight: bold;
+}
+
+#contact-form input, 
+#contact-form textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#contact-form button {
+  background-color: #f7bf31;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#contact-form button:hover {
+  background-color: #e6a029;
+  color: #fff;
+}
+
   @media (min-width: 992px) {
     .custom-navbar .custom-navbar-nav li {
       margin-left: 15px;
