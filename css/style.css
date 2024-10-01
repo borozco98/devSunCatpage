@@ -5,6 +5,8 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
 body {
   overflow-x: hidden;
   position: relative; }
@@ -45,6 +47,7 @@ a {
       -webkit-box-shadow: none;
       box-shadow: none;
       outline: none; }
+
 
 /* Contact Form Styles */
 #contact-form {
@@ -745,3 +748,10 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+
+    #amoforms_script_1384451 {
+      margin: 0 auto; /* Centra el iframe del formulario */
+      max-width: 600px; /* Puedes ajustar este valor según lo necesites */
+      width: 100%;
+    }
+    
